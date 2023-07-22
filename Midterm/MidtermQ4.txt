@@ -1,0 +1,22 @@
+Question 4
+
+public static void findEvenPrintOddNums(){
+	int num = 0;
+	System.out.printf("%s","Even numbers from 0 to 100");
+	//Program starts num at 0 and prints even numbers, incrementing by 2, until num > 100
+	while (num <= 100){
+		System.out.printf("%d\n",num);
+		num = num + 2;
+	}
+	
+	//Program continues
+	num = 201;
+	//Program re-assigns num value to 201; then continues same while loop printing all odd numbers, incrementing by 2
+	System.out.printf("%s","Odd numbers from 201 to 250");
+	while (num <= 250){
+		System.out.printf("%d\n",num);
+		num = num + 2;
+}
+
+***Under main method, call function
+findEvenPrintOddNums();

@@ -1,0 +1,97 @@
+﻿Java Programming 35a Midterm
+
+
+Java Programming
+CIS 35a - Midterm (Summer  2023) - 90 mins
+Exam instructions
+Answer all questions in a text file. Please do not use eclipse or any compiler - only TEXT FILE
+Exam is open book and notes. Students can bring notes (no page limit) and one book. Exams received after 7:32 PM will not be graded.
+
+
+
+
+Question 1
+Consider the following data in an array:
+    34 22 21 56 32 1 12 -5 77 8
+Apply selection sort to the above data set and show the results after 5th iteration.
+
+
+Question 2:
+Create a class called MusicCollection that has instances of classes called Artist and Recording. 
+
+
+Recording class has an instance variable called Track that represents a single piece of music within a recording. 
+
+
+MusicCollection must have an array of Artists and an Array of Recording Objects. 
+
+
+Each Recording can only have a single artist and an array of Track Objects. Add a main() method to test the creation of all of these objects.
+
+
+Note: Please provide a complete class definition for each including constructors, getter and setters. Also make sure you create separate java classes for MusicCollections, Artist and Recording.
+
+
+Question 3:
+Consider the following array:        
+        {41, 26, -14, 15, 74, 49, 10, 19, -13, 12}
+Use insertion sort and show the data after the 6th iteration.
+
+
+Question 4:
+Write a function to find even numbers between 0 and 100, using a while loop.  The function should then print odd numbers between 201 to 250. 
+(Note: 0 is an even number).
+________________
+
+
+Question 5:
+What is the output of the following Java program? 
+        class Acura 
+        {
+                Acura (String s) 
+                { 
+                        System.out.println("Acura " + s); 
+                }
+        }
+        class Honda 
+        {
+                Honda (String s) 
+                { 
+                        System.out.println("Honda " + s); 
+                }
+        }
+        public class Cars 
+        {
+                public static void main(String args[]) 
+                {
+                        Acura integra = new Acura ("Civic");
+                        Honda civic = new Honda ("Integra");
+                        Honda accord = new Honda ("Porsche");
+                }
+}
+
+
+Question 6:
+Review the following code snippets. If code correction is needed, provide the correction on your answer sheet and state the output. 
+If you provide your detailed strategy for your response, you have a higher chance of getting partial credit.
+a. Given this code fragment:
+int sum = 0 ;
+for (int i = 1 ; i <= 5 ; i++)
+        if(i==2)
+sum += i ;
+else
+sum = sum + i * 2;        
+
+
+What is the value of sum, after the code is executed?
+b. Given the code fragment:
+   int c;
+   c = 4.8 + 2; 
+   What is the value of c?       
+
+
+c. What are the data types of the following constants?
+3.14f
+1.56
+‘a’
+              “true”

@@ -1,0 +1,5 @@
+Question 1
+
+AFTER ITERATION 5:
+
+{-5, 1, 8, 12, 21, 22, 56, 34, 77, 32}

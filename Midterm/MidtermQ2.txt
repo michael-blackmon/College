@@ -1,0 +1,96 @@
+Question 2
+
+**********************************************************************************
+ARTIST CLASS:
+
+public class Artist {
+    	private String name;
+
+    	public Artist(String name){
+        	this.name = name;
+    	}
+
+    	public String getName(){
+        	return name;
+    	}
+
+    	public void setName(String name){
+        	this.name = name;
+    	}
+}
+	
+***********************************************************************************
+RECORDING CLASS:
+
+public class Recording{
+    	private Artist artist;
+    	private Track[] tracks;
+
+	//Constructor
+    	public Recording(Artist artist, Track[] tracks){
+        	this.artist = artist;
+        	this.tracks = tracks;
+    	}
+
+	//Getters and Setters
+    	public Artist getArtist(){
+        	return artist;
+    	}
+
+    	public void setArtist(Artist artist){
+        	this.artist = artist;
+    	}
+
+    	public Track[] getTracks(){
+        	return tracks;
+    	}
+
+    	public void setTracks(Track[] tracks){
+        	this.tracks = tracks;
+    	}
+}
+********************************************************************************
+MUSICCOLLECTION CLASS:
+
+public class MusicCollection {
+	//Music collection arrays
+    	private Artist[] artists;
+    	private Recording[] recordings;
+
+    	public MusicCollection(Artist[] artists, Recording[] recordings) {
+        	this.artists = artists;
+        	this.recordings = recordings;
+    	}
+
+   	 public Artist[] getArtists() {
+        	return artists;
+    	}
+
+    	public void setArtists(Artist[] artists) {
+        	this.artists = artists;
+    	}
+
+    	public Recording[] getRecordings() {
+        	return recordings;
+    	}
+
+    	public void setRecordings(Recording[] recordings) {
+        	this.recordings = recordings;
+    	}
+
+
+	//main() method to create objects
+    	public static void main(String[] args) {
+       		// Create Artists
+        	Artist artist1 = new Artist("Artist 1");
+        	Artist artist2 = new Artist("Artist 2");
+
+        	// Create Recordings
+        	Recording recording1 = new Recording(artist1, new Recording.Track[]{track1, track2});
+        	Recording recording2 = new Recording(artist2, new Recording.Track[]{track3});
+
+        	// Create MusicCollection
+        	MusicCollection musicCollection = new MusicCollection(new Artist[]{artist1, artist2}, new Recording[]{recording1, recording2});
+    	}
+}
+
