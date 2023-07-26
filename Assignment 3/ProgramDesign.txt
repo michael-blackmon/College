@@ -1,0 +1,18 @@
+PROGRAM DESIGN:
+
+
+/*
+                                            DESIGN
+VARIABLES: (String) - fname - Store the file name of the input data file
+           (boolean) - DEBUG - Indicates whether to print debug messages
+
+INPUT:      Uses Scanner class to take input from user to obtain the file name for the data file
+
+PROCESSING: The FileIO class reads the data from the input file and constructs Franchise and Store objects.
+            The Franchise class represents a franchise with multiple Store objects.
+            The Store class represents individual stores with their weekly sales data.
+            The Franchise class contains methods to calculate various statistics based on the sales data.
+
+PRINTING:  The Driver class prompts the user to enter the store number they want to view data for.
+            It displays the statistics for the selected store using methods from the Franchise class.
+*/

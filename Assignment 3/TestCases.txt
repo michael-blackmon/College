@@ -1,0 +1,49 @@
+TEST CASES: Note: The full Salesdat.txt file info is displayed to user first; didn't have time to fix
+TEST CASE #1:
+
+Enter the store number (1 to 6) you want to display data for:
+1
+Store #1 Statistics:
+Total Sales for each week:
+16419.52 20615.0 24878.0 29141.0 33404.0 
+Average Daily Sales for each week:
+2345.6458 2945.0 3554.0 4163.0 4772.0 
+Total Sales for all weeks: 124457.516
+Average Weekly Sales: 24891.504
+Week with the highest amount in sales: 5
+Week with the lowest amount in sales: 1
+
+Process finished with exit code 0
+
+TEST CASE #2:
+
+Enter the store number (1 to 6) you want to display data for:
+3
+Store #3 Statistics:
+Total Sales for each week:
+19919.52 24115.0 28378.0 32641.0 36904.0 
+Average Daily Sales for each week:
+2845.6458 3445.0 4054.0 4663.0 5272.0 
+Total Sales for all weeks: 141957.52
+Average Weekly Sales: 28391.504
+Week with the highest amount in sales: 5
+Week with the lowest amount in sales: 1
+
+Process finished with exit code 0
+
+
+TEST CASE #3:
+
+Enter the store number (1 to 6) you want to display data for:
+6
+Store #6 Statistics:
+Total Sales for each week:
+26912.451 31107.932 35370.93 39633.93 43896.93 
+Average Daily Sales for each week:
+3844.636 4443.99 5052.9897 5661.9897 6270.9897 
+Total Sales for all weeks: 176922.19
+Average Weekly Sales: 35384.438
+Week with the highest amount in sales: 5
+Week with the lowest amount in sales: 1
+
+Process finished with exit code 0
