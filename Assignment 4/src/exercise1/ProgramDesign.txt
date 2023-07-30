@@ -1,0 +1,11 @@
+PROGRAM DESIGN EXERCISE 1 PART 1
+
+Variables:	annualInterestRate (static double) - Stores the annual interest rate for SavingsAccount objects
+		savingsBalance (private double) - Stores remaining initial and remaining savings balance
+
+Input:		This program does not take user input, it has pre-defined input
+
+Processing:	calculateMonthlyInterest method calculates and updates the monthly interest amount
+		modifyInterestRate method modifies the interest rate
+
+Printing:	Program displays savingsBalance after calculate monthly interest

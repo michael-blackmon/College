@@ -1,0 +1,33 @@
+Exercise 1 Part 2 Test Case
+
+Initial Balance for First Saver: $2,000.00
+Initial Balance for Second Saver: $2,000.00
+Remaining balance after deposit for First Saver: $3,000.00
+Remaining balance after deposit for Second Saver: $3,750.00
+Remaining balance after withdrawal for First Saver: $1,500.00
+Remaining balance after withdrawal for Second Saver: $3,250.00
+Month: 1 First Saver's Balance: $1,505.00
+Month: 1 Second Saver's Balance: $3,260.83
+Month: 2 First Saver's Balance: $1,510.02
+Month: 2 Second Saver's Balance: $3,271.70
+Month: 3 First Saver's Balance: $1,515.05
+Month: 3 Second Saver's Balance: $3,282.61
+Month: 4 First Saver's Balance: $1,520.10
+Month: 4 Second Saver's Balance: $3,293.55
+Month: 5 First Saver's Balance: $1,525.17
+Month: 5 Second Saver's Balance: $3,304.53
+Month: 6 First Saver's Balance: $1,530.25
+Month: 6 Second Saver's Balance: $3,315.54
+Month: 7 First Saver's Balance: $1,535.35
+Month: 7 Second Saver's Balance: $3,326.60
+Month: 8 First Saver's Balance: $1,540.47
+Month: 8 Second Saver's Balance: $3,337.68
+Month: 9 First Saver's Balance: $1,545.60
+Month: 9 Second Saver's Balance: $3,348.81
+Month: 10 First Saver's Balance: $1,550.76
+Month: 10 Second Saver's Balance: $3,359.97
+Month: 11 First Saver's Balance: $1,555.93
+Month: 11 Second Saver's Balance: $3,371.17
+Month: 12 First Saver's Balance: $1,561.11
+Month: 12 Second Saver's Balance: $3,382.41
+Process finished with exit code 0

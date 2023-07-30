@@ -1,0 +1,11 @@
+PROGRAM DESIGN EXERCISE 1 PART 2
+
+Variables:	specialInterestRate (static double) - Stores special annual interest rate
+
+Input:		This program does not take user input, it has pre-defined input
+
+Processing:	SpecialSavings extends SavingsAccount class
+		override calculateMonthlyInterest method to add 10% interest > $10k, calculates and updates the monthly interest amount
+		Deposit and Withdraw methods added
+
+Printing:	Program displays savingsBalance after calculate monthly interest

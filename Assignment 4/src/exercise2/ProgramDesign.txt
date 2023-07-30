@@ -1,0 +1,13 @@
+PROGRAM DESIGN EXERCISE 2
+
+Variables:	[Ship.java](String) - name, origin, departureDate, arrivalDate, departingPort, arrivalPort, owner
+		[CargoShip.java](String) - cargoType, loadingMethod; (int) - numberOfCranes; (boolean) - contraband; (double) - cargoValue;
+		[CruiseShip.java](String[])- services; (String) - cruiseType; (int )- numberOfRooms; (double) - ticketPrice
+
+Input:		This program does not take user input, it has pre-defined input
+
+Processing:	Ship super class contains attributes for all ship types
+		CargoShip and CruiseShip extends Ship class
+		Ship array, instantiate Ship, CargoShip, CruiseShip objects demonstrating polymorphims
+
+Printing:	Program displays Ship array
