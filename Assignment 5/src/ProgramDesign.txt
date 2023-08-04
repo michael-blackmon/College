@@ -1,0 +1,19 @@
+Program Design
+
+Variables:
+- `students`: Array of `Student` objects to store student data.
+- `statistics`: Instance of `Statistics` class to perform statistical analysis.
+
+Input:
+- Reads data from `studentDat.txt` or 'studentDat2.txt'
+
+Processing:
+- Create a Student class with private instance variables for SID (student ID) and scores (an array of 5 quiz scores). Implement getter and setter methods for SID and scores in the Student class. Add a method to print the student data.
+- Create a Statistics class with private arrays for lowScores, highScores, and avgScores. Implement methods to find and store the low, high, and average scores for each quiz.
+- Create a Util class with a constructor that takes the filename as input and initializes the fname variable. Implement the readFile method to read data from the file and create Student objects with their respective IDs and scores. Handle file reading errors with appropriate error handling.
+- In the Driver class (the entry point of the program), create an instance of Util, passing the filename as a parameter to the constructor. Call the readFile method to populate the students array.
+- Create an instance of the Statistics class. Call the findLow, findHigh, and findAvg methods, passing the students array as input to calculate the low, high, and average scores.
+
+Printing:
+- In the `Statistics` class, implement the `print` method to display the student data and stats information
+- Use a `switch` statement to handle different cases (0-4), then print depending on case

@@ -1,0 +1,114 @@
+								TEST CASES
+								
+TEST CASE 1 (Using studentDat.txt and switch case option 4):
+
+Stud Qu1 Qu2 Qu3 Qu4 Qu5
+1234 52 7 100 78 34 
+2134 90 36 90 77 30 
+3124 100 45 20 90 70 
+4532 11 17 81 32 77 
+5678 20 12 45 78 34 
+6134 34 80 55 78 45 
+7874 60 100 56 78 78 
+8026 70 10 66 78 56 
+9893 34 9 77 78 20 
+1947 45 40 88 78 55 
+2877 55 50 99 78 80 
+3189 22 70 100 78 77 
+4602 89 50 91 78 60 
+5405 11 11 0 78 10 
+6999 0 98 89 78 20 
+Low Score 0 7 0 32 10 
+High Score 100 100 100 90 80 
+Average 46.2 42.333332 70.46667 75.666664 49.733334 
+
+Process finished with exit code 0
+
+
+TEST CASE 2 (Using studentDat2.txt and switch case option 4) ends at SID 4040 which I put to indicate when the 40th student is reached to show it stops at 40:
+
+Stud Qu1 Qu2 Qu3 Qu4 Qu5
+1234 52 7 100 78 34 
+2134 90 36 90 77 30 
+3124 100 45 20 90 70 
+4532 11 17 81 32 77 
+5678 20 12 45 78 34 
+6134 34 80 55 78 45 
+7874 60 100 56 78 78 
+8026 70 10 66 78 56 
+9893 34 9 77 78 20 
+1947 45 40 88 78 55 
+2877 55 50 99 78 80 
+3189 22 70 100 78 77 
+4602 89 50 91 78 60 
+5405 11 11 0 78 10 
+6999 0 98 89 78 20 
+1234 52 7 100 78 34 
+2134 90 36 90 77 30 
+3124 100 45 20 90 70 
+4532 11 17 81 32 77 
+5678 20 12 45 78 34 
+6134 34 80 55 78 45 
+7874 60 100 56 78 78 
+8026 70 10 66 78 56 
+9893 34 9 77 78 20 
+1947 45 40 88 78 55 
+2877 55 50 99 78 80 
+3189 22 70 100 78 77 
+4602 89 50 91 78 60 
+5405 11 11 0 78 10 
+6999 0 98 89 78 20 
+1234 52 7 100 78 34 
+2134 90 36 90 77 30 
+3124 100 45 20 90 70 
+4532 11 17 81 32 77 
+5678 20 12 45 78 34 
+6134 34 80 55 78 45 
+7874 60 100 56 78 78 
+8026 70 10 66 78 56 
+3939 34 9 77 78 20 
+4040 45 40 88 78 55 
+Low Score 0 7 0 32 10 
+High Score 100 100 100 90 80 
+Average 47.55 40.65 69.8 75.375 49.775 
+
+Process finished with exit code 0
+
+TEST CASE 3 (Using studentDat.txt and switch case option 2):
+
+High Score 100 100 100 90 80 
+
+Process finished with exit code 0
+
+TEST CASE 4 (Using studentDat.txt and switch case option 0):
+
+Stud Qu1 Qu2 Qu3 Qu4 Qu5
+1234 52 7 100 78 34 
+2134 90 36 90 77 30 
+3124 100 45 20 90 70 
+4532 11 17 81 32 77 
+5678 20 12 45 78 34 
+6134 34 80 55 78 45 
+7874 60 100 56 78 78 
+8026 70 10 66 78 56 
+9893 34 9 77 78 20 
+1947 45 40 88 78 55 
+2877 55 50 99 78 80 
+3189 22 70 100 78 77 
+4602 89 50 91 78 60 
+5405 11 11 0 78 10 
+6999 0 98 89 78 20 
+
+Process finished with exit code 0
+
+TEST CASE 5 (Using studentDat.txt and switch case option 1):
+
+Low Score 0 7 0 32 10 
+
+Process finished with exit code 0
+
+TEST CASE 6 (Using studentDat.txt and switch case option 3):
+
+Average 46.20 42.33 70.47 75.67 49.73 
+
+Process finished with exit code 0
