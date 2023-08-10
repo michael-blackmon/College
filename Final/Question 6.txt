@@ -1,0 +1,56 @@
+QUESTION 6
+*****************************************************************************
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileIO{
+	private String filename;
+	
+	//constructors
+	public FileIO(){
+		//default constructor
+	}
+	
+	public FileIO(String filename){
+		this.filename = filename;
+	}
+	
+	//getters & setters
+	public String getFilename(){
+		return filename;
+	}
+	
+	public void setFilename(String filename){
+		this.filename = filename;
+	}
+	
+	 public class WordCounter{
+        public int countWords(){
+            int totalWords = 0;
+            
+            try(BufferedReader reader = new BufferedReader(new FileReader(filename))){
+                String line;
+                while((line = reader.readLine()) != null){
+                    String[] words = line.split("\\s+");
+                    totalWords += words.length;
+                }
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+            
+            return totalWords;
+        }
+    }
+	
+	public static void main(String[] args){
+        FileIO fileIO = new FileIO("sample.txt");
+        
+        FileIO.WordCounter wordCounter = fileIO.new WordCounter();
+        int wordCount = wordCounter.countWords();
+        
+        System.out.println("Total words in the file: " + wordCount);
+    }
+}
+
+

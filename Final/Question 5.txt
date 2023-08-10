@@ -1,0 +1,46 @@
+Question 5
+*****************************************************************************
+
+import java.util.Scanner;
+
+public class PasswordEncryptor{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+        
+        String encryptedPassword = encryptPassword(password);
+        
+        System.out.println("Encrypted password: " + encryptedPassword);
+        
+        scanner.close();
+    }
+    
+    public static String encryptPassword(String password){
+        StringBuilder encrypted = new StringBuilder();
+        
+        for(char c : password.toCharArray()){
+            if(Character.isLetter(c)){
+                //convert letters to the ASCII code of the character + 10
+                encrypted.append((int) c + 10);
+            } else if(Character.isDigit(c)){
+                //convert digits to the corresponding alphabet (e.g., '1' becomes 'a')
+                encrypted.append((char) (c + 'a' - '0'));
+            } else{
+                //convert punctuation (all other than letter/digit) characters to 0
+                encrypted.append('0');
+            }
+        }
+        
+        return encrypted.toString();
+    }
+}
+
+/*
+PasswordEncryptor takes input from user and passes value to encryptPassword() for encryption
+Uses Java Character class methods to determine if character is letter or digit for conditional
+and converts as required
+Using ASCII to convert letters to ASCII
+*/
+

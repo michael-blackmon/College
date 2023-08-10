@@ -1,0 +1,78 @@
+QUESTION 3
+*********************************************************************************
+import java.io.*;
+
+class Laptop implements Serializable{
+    private double CPUSpeed;
+    private int RAM;
+	
+	//constructors
+	public Laptop(){
+		//default constructor
+	}
+
+    public Laptop(double CPUSpeed, int RAM){
+        this.CPUSpeed = CPUSpeed;
+        this.RAM = RAM;
+    }
+
+	//getters &Setters
+    public double getCPUSpeed(){
+        return CPUSpeed;
+    }
+
+    public int getRAM(){
+        return RAM;
+    }
+}
+
+public class LaptopSerializationDemo{
+    public static void main(String[] args){
+        //creating laptop objects
+        Laptop laptop1 = new Laptop(2.4, 8);
+        Laptop laptop2 = new Laptop(3.0, 16);
+
+        //Serialize objects to disk
+        serializeLaptop(laptop1, "laptop1.ser");
+        serializeLaptop(laptop2, "laptop2.ser");
+
+        //deserialize and print attributes
+        Laptop deserializedLaptop1 = deserializeLaptop("laptop1.ser");
+        Laptop deserializedLaptop2 = deserializeLaptop("laptop2.ser");
+
+        if(deserializedLaptop1 != null){
+            System.out.println("Laptop 1 - CPU Speed: " + deserializedLaptop1.getCPUSpeed() + " GHz, RAM: " + deserializedLaptop1.getRAM() + " GB");
+        }
+
+        if(deserializedLaptop2 != null){
+            System.out.println("Laptop 2 - CPU Speed: " + deserializedLaptop2.getCPUSpeed() + " GHz, RAM: " + deserializedLaptop2.getRAM() + " GB");
+        }
+    }
+
+    private static void serializeLaptop(Laptop laptop, String fileName){
+        try{
+            FileOutputStream fileOut = new FileOutputStream(fileName);
+            ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
+            objectOut.writeObject(laptop);
+            objectOut.close();
+            fileOut.close();
+            System.out.println("Laptop object serialized to " + fileName);
+        } catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    private static Laptop deserializeLaptop(String fileName){
+        Laptop laptop = null;
+        try{
+            FileInputStream fileIn = new FileInputStream(fileName);
+            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
+            laptop = (Laptop) objectIn.readObject();
+            objectIn.close();
+            fileIn.close();
+        } catch(IOException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        return laptop;
+    }
+}

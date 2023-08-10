@@ -1,0 +1,73 @@
+﻿Java Final Exam - Summer 2023
+Answer all questions - Total time 1.5 hours - Open book and notes - No electronic devices - Answer your questions on plain paper 
+
+
+Question 1:
+When would you use an “if” statement versus an exception? Demonstrate with a coded example?
+Question 2;
+Consider the following class and print the output:
+abstract class Test1 {
+static int x;
+Test1() {
+        System.out.printf(“Making objects”);
+}
+public abstract void restful(int x);
+}
+public class Test2 extends Test1 {
+        public void restful(int x) { 
+                System.out.printf(“class Test2”);
+        }
+}
+public class Test3 extends Test1 {
+        Test3()
+        {
+                super();
+        }
+        public void restful(int x) { 
+                System.out.printf(“class Test3”);
+        }
+}
+public class Driver {
+public static void main(String [] args)
+{
+Test2 a1 = new Test1();
+Test3 a2 = new Test();
+a1.restful(15);
+a2.restful(20);
+Test a3 [] = new Test[5];
+for(int i=0;i<a3.length;i++)
+ if (i%2)
+        a3[i] = new Test2();
+ else
+a3[i] = new Test3();        
+
+
+for(int i=0;i<a3.length;i++)
+        a3[i].restful[10];        
+}
+}
+
+
+Question 3:
+Create a Laptop class with at least two properties (CPUSpeed and RAM). Write methods to archive the objects of Laptop type to disk and then reads and print the attributes. Write a main() to demonstrate the methods.
+
+
+
+
+Question 4:
+1. Write a code snippet to open a text file named “fun.txt” and write three lines in it.
+2. Explain dynamic binding and how it is used with interfaces? No code is required for this question.
+
+
+
+
+Question 5:
+Imagine you are developing software for De Anza College that requires uses to enter their password. Software requires that the password be encrypted using the following criteria:
+1. All letters are converted to a number of your choice.
+2. All numbers are converted to an alphabet
+3. All punctuation characters are converted to 0.
+Write a class that takes a password input and meets the state criteria. Demonstrate the program that allows the user to enter a password and then display the encrypted message for testing purposes.
+
+
+Question 6:
+Write a class FileIO that has an instance variable named filename. Write constructor, getter and setter method for FileIO. Write an inner class WordCounter that displays the total number of words that the file contains.

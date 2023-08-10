@@ -1,0 +1,26 @@
+QUESTION 4
+*********************************************************************************
+PART 1:
+*********************************************************************************
+import java.io.*;
+
+public class FileWrite{
+	public static void main(String[] args){
+		try{
+			FileWriter writer = new FileWriter("fun.txt");
+			writer.write("Hello I'm Line #1\n");
+			writer.write("Hello Line #1 I'm Line #2, how do you do?\n");
+			writer.write("Hello Line #1 and Line #2, I'm Line #3 I'll be here if you need\n");
+			writer.close();
+		} catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+}
+*********************************************************************************
+PART 2:
+
+Dynamic Binding is a mechanism allowing various behaviors to be associated with objects of various subclasses.
+When a method is overridden in a subclass, the subclass provides its own implementation of that method. The
+overridden method in the subclass is executed when the method is invvoked on an object of the subclass.
+The method that is executed is determined at runtime rather than compile time
