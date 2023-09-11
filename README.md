@@ -1,2 +1,2 @@
 # College
-Assignments from different college CS courses
+Assignments from college CS courses
